@@ -1,0 +1,16 @@
+# Douyin Live Stream Comment Processing with Voice Response
+# Dependencies
+
+# Python version: 3.8+
+
+# API requests
+requests==2.31.0
+
+# Configuration management
+python-dotenv==1.0.0
+
+# Audio processing
+pygame==2.5.2
+
+# Alibaba Bailian API client
+alibabacloud-bailian20230601==1.0.0
