@@ -14,3 +14,9 @@ pygame==2.5.2
 
 # Alibaba Bailian API client
 alibabacloud-bailian20230601==1.0.0
+
+# Douyin live comment capture
+betterproto==2.0.0b6
+websocket-client==1.7.0
+PyExecJS==1.5.1
+mini_racer==0.12.4

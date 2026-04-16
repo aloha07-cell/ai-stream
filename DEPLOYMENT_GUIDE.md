@@ -72,6 +72,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+**注意：** 这会安装 `douyin-live` 库，用于抓取抖音直播的真实弹幕。如果安装失败，可能需要使用以下命令：
+
+```bash
+pip install douyin-live
+```
+
 ### 步骤4：配置环境变量
 
 1. 打开 `.env` 文件
@@ -198,8 +204,15 @@ python3 main.py
 
 ### 2. 使用真实的抖音弹幕抓取
 
-1. 安装抖音弹幕抓取库
-2. 在 `modules/comment_capture/comment_capture.py` 中使用真实的弹幕抓取功能
+1. 确保 `douyin-live` 库已正确安装
+2. 在 `.env` 文件中填写正确的抖音直播间URL或房间ID：
+   ```env
+   DOUYIN_LIVE_URL=https://www.douyin.com/live/1234567890  # 替换为你的抖音直播间URL
+   # 或者
+   DOUYIN_ROOM_ID=1234567890  # 替换为你的抖音直播间ID
+   ```
+
+**注意：** 抖音直播必须处于直播状态，否则无法抓取弹幕
 
 ### 3. 部署为服务
 
